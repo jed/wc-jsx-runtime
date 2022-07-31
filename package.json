@@ -1,0 +1,31 @@
+{
+  "name": "wc-jsx-runtime",
+  "version": "1.0.0",
+  "description": "A JSX transform for Web Components",
+  "type": "module",
+  "module": "./jsx-runtime.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jed/wc-jsx-runtime.git"
+  },
+  "author": "Jed Schmidt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jed/wc-jsx-runtime/issues"
+  },
+  "homepage": "https://github.com/jed/wc-jsx-runtime#readme",
+  "exports": {
+    "./jsx-runtime": {
+      "browser": "./jsx-runtime.js",
+      "import": "./jsx-runtime.js"
+    }
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.24.2",
+    "serve": "^14.0.1",
+    "esbuild": "^0.14.51"
+  }
+}
