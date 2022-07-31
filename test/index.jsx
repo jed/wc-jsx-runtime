@@ -10,20 +10,20 @@ class AppHtml extends HTMLHtmlElement {
 class AppHead extends HTMLHeadElement {
   connectedCallback() {
     this.append(
-      <title>Hello, world!</title>
+      <title>Testing ws-jsx-runtime...</title>
     )
   }
 }
 
 class AppBody extends HTMLBodyElement {
   connectedCallback() {
-    this.append(<HelloWorld />)
+    this.append(<HelloWorld name='JSX'/>)
   }
 }
 
 class HelloWorld extends HTMLElement {
   connectedCallback() {
-    this.append('Hello, world!')
+    this.append(`Hello, ${this.getAttribute('name')}!`)
   }
 }
 

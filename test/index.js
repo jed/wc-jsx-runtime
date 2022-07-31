@@ -40,19 +40,21 @@
     connectedCallback() {
       this.append(
         /* @__PURE__ */ jsx("title", {
-          children: "Hello, world!"
+          children: "Testing ws-jsx-runtime..."
         })
       );
     }
   };
   var AppBody = class extends HTMLBodyElement {
     connectedCallback() {
-      this.append(/* @__PURE__ */ jsx(HelloWorld, {}));
+      this.append(/* @__PURE__ */ jsx(HelloWorld, {
+        name: "JSX"
+      }));
     }
   };
   var HelloWorld = class extends HTMLElement {
     connectedCallback() {
-      this.append("Hello, world!");
+      this.append(`Hello, ${this.getAttribute("name")}!`);
     }
   };
   document.documentElement.replaceWith(/* @__PURE__ */ jsx(AppHtml, {}));
