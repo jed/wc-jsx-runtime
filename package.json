@@ -1,6 +1,6 @@
 {
   "name": "wc-jsx-runtime",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JSX transform for Web Components",
   "type": "module",
   "module": "./jsx-runtime.js",
